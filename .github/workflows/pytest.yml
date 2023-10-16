@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  tests:
+  pytest:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -50,4 +50,3 @@ jobs:
     - name: Test with unittest
       run: |
         python -m unittest
-
